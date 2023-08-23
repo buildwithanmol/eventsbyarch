@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* For Webkit browsers */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #908d8b;
+  border-radius: 6px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.gradient {
+  background: rgb(116, 195, 227);
+  background: linear-gradient(
+    150deg,
+    rgba(44, 148, 173, 1) 0%,
+    rgba(47, 178, 136, 1) 35%,
+    rgba(116, 195, 227, 1) 100%
+  );
+}
+.gradient-reverse {
+  background: rgb(116, 195, 227);
+  background: linear-gradient(
+    150deg,
+    rgba(116, 195, 227, 1)  0%,
+    rgba(47, 178, 136, 1) 35%,
+    rgba(44, 148, 173, 1) 100%
+  );
+}
+
+.gradient-text {
+  background: linear-gradient(
+    30deg,
+    rgba(116, 195, 227, 1) 0%,
+    rgba(47, 178, 136, 1) 75%,
+    rgba(44, 148, 173, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari/WebKit browsers */
+  color: transparent;
+}
+
+.fade-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.fade-word {
+  font-size: 24px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.transform-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.transform-button:hover {
+  background-color: #0056b3;
+}
+
+.fade-word {
+  font-size: 24px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.paragraph{
+  overflow-y: scroll;
+  max-height: 250px;
+  margin:20px 0
+}
+
+.swiper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
