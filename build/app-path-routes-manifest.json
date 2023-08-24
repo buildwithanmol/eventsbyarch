@@ -1,0 +1,10 @@
+{
+  "/icon.png/route": "/icon.png",
+  "/page": "/",
+  "/about/page": "/about",
+  "/contact/page": "/contact",
+  "/corporates/page": "/corporates",
+  "/social-gathering/page": "/social-gathering",
+  "/wedding/page": "/wedding",
+  "/api/mail-me/route": "/api/mail-me"
+}

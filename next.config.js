@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output:'export'
+    distDir: "build",
+    images: {
+        domains: ['images.unsplash.com'],
+    },
 }
 
 module.exports = nextConfig

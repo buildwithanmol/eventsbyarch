@@ -1,0 +1,10 @@
+{
+  "/icon.png/route": "app/icon.png/route.js",
+  "/page": "app/page.js",
+  "/about/page": "app/about/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/corporates/page": "app/corporates/page.js",
+  "/social-gathering/page": "app/social-gathering/page.js",
+  "/wedding/page": "app/wedding/page.js",
+  "/api/mail-me/route": "app/api/mail-me/route.js"
+}

@@ -31,7 +31,7 @@ const EventsLayout = ({ primaryTitle, heroTitle, secondaryTitle, contentHeading,
                     <p className='max-w-[450px]  text-white  ' > {contentParagraph} </p>
                 </div>
                 <div className='flex items-center justify-center'>
-                    <Image src={imgSrc} className='lg:max-w-[450px] max-w-[350px] ' alt="" />
+                    <Image src={imgSrc}    className='lg:max-w-[450px] max-w-[350px] ' alt="image" width={350} height={350} />
                 </div>
             </section>
             <div className={`lg:text-[30px] text-[25px] text-center font-primary gradient-text mx-3 mt-[3vw] mb-[1vw] `} dangerouslySetInnerHTML={addBreak(contactHeader)} />

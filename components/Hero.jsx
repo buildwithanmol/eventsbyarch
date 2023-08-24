@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
-import image from '/public/logo.png'
+// import image from '/public/logo.png'
 import { CgMenuRightAlt } from 'react-icons/cg'
 import Link from 'next/link'
 import SocialIcons from './SocialIcons'
@@ -53,7 +53,7 @@ const Hero = ({ primary, secondary }) => {
           </div>
           <Link href="/">
             <Image
-              src={image.src}
+              src='/logo.png'
               width={200}
               height={200}
               alt='Arch Events'
@@ -69,7 +69,7 @@ const Hero = ({ primary, secondary }) => {
             </div>
             <Link href="/">
               <Image
-                src={image.src}
+                src='/logo.png'
                 width={200}
                 height={200}
                 alt='Arch Events'

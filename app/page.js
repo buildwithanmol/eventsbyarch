@@ -72,7 +72,7 @@ const Home = () => {
         <Line style='my-5' />
       </section>
       <section className="flex sm:flex-row flex-col items-center justify-evenly gradient py-6 relative ">
-        <div>
+        <div className="relative">
           <Image
             src="/founder.jpg"
             width={280}
@@ -121,7 +121,7 @@ const Home = () => {
           <div className="flex items-center justify-center">
             {
               data ? data.map((e, i) => {
-                return <SwiperSlide key={i} > <TestimonialCard styleIt='mx-auto' key={i} name={e.name} review={e.review} /> </SwiperSlide>
+                return <SwiperSlide key={i}> <TestimonialCard styleIt='mx-auto' key={i} name={e.name} review={e.review} /> </SwiperSlide>
               }) : null
             }
           </div>
