@@ -34,8 +34,8 @@ const EventsLayout = ({ primaryTitle, heroTitle, secondaryTitle, contentHeading,
                 <div className=' grid-cols-2  grid-rows-2 place-items-center justify-center max-w-2xl gap-2 hidden md:grid '>
                     {
                         imgSrc && imgSrc.map((e, i) => {
-                            return <div className='w-[300px] overflow-hidden h-[200px]'>
-                                <Image src={e} key={i} className='object-cover w-full h-full shadow-xl rounded-md' alt="image" width={400} height={400} />
+                            return <div  key={i}  className='w-[300px] overflow-hidden h-[200px]'>
+                                <Image src={e}className='object-cover w-full h-full shadow-xl rounded-md' alt="image" width={400} height={400} />
                             </div>
                         })
                     }
