@@ -14,8 +14,8 @@ function sendMail(fname, lname, email, phone, description) {
     port: 587,
     secure: false,
     auth: {
-      user: "imailaryan01@gmail.com",
-      pass: "uqxxjqxllmcysrkg",
+      user: process.env.USER_NAME,
+      pass: process.env.PASSWORD,
     },
   });
 
