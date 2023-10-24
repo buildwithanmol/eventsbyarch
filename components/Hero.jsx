@@ -105,7 +105,7 @@ const Hero = ({ primary, secondary, type }) => {
         }
         <section className='flex flex-col items-center justify-around my-[15vw] '>
           <div className='text-center'>
-            <h1 className={`  text-white ${ type ? 'sm:text-4xl ' :  parisienne.className  } text-[25px] sm:text-8xl font-primary `}>  { primary }</h1>
+            <h1 className={`  text-white ${ type ? 'sm:text-[20px] ' :  parisienne.className  } text-[25px] sm:text-8xl font-primary `}>  { primary }</h1>
             {
               secondary === true ? <h1 className={` font-primary text-white text-[25px] sm:text-[27px] lg:text-[38px] italic fade-word ${fadeDirection === 1 ? 'fade-in' : 'fade-out'}`} >
               {wordsArray[currentIndex]}
