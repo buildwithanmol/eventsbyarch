@@ -6,7 +6,7 @@ import Line from 'components/Line'
 const Contact = () => {
   return (
     <>
-      <Hero primary='GET IN TOUCH' />
+      <Hero primary='Get In Touch' />
       <h1 className='text-primary text-center gradient-text font-primary sm:text-[30px] text-[25px] '>
       We don’t just plan an event, we create an experience.<br/> Let’s talk about making your dream event happen!
       </h1>

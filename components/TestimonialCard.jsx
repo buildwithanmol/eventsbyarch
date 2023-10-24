@@ -1,19 +1,15 @@
-const TestimonialCard = ({review, name, key, styleIt}) => {
+import Image from "next/image"
+
+const TestimonialCard = ({ styleIt, src }) => {
       return (
-            <div className={`${styleIt} cursor-grab p-4 bg-white flex flex-col border w-[300px] sm:w-[22vw] h-[420px] rounded-[45px] relative shadow-xl`} key={key}>
-                  <p className='absolute bottom-[30px] left-[40px] font-primary font-bold text-[20px] text-[#908d8b] italic '>{name}</p>
-                  <div className='my-6 mx-3'>
-                        <svg width="32" height="27" viewBox="0 0 32 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M9 15.5C10.6 15.5 11.8667 16.0333 12.8 17.1C13.8 18.1 14.3 19.4333 14.3 21.1C14.3 22.9 13.7 24.3333 12.5 25.4C11.3667 26.4 9.8 26.9 7.8 26.9C5.46667 26.9 3.63333 26 2.3 24.2C1.03333 22.4 0.4 19.8333 0.4 16.5C0.4 13.5 1.06667 10.7333 2.4 8.2C3.73333 5.6 5.73333 3 8.4 0.399998C8.46667 0.333332 8.56667 0.299999 8.7 0.299999C8.9 0.299999 9.06667 0.399998 9.2 0.599996C9.33333 0.799997 9.33333 0.966664 9.2 1.1C5.93333 4.43333 4.3 8.36666 4.3 12.9C4.3 14.7667 4.63333 16.1333 5.3 17C5.9 16 7.13333 15.5 9 15.5ZM26.3 15.5C27.9 15.5 29.1667 16.0333 30.1 17.1C31.1 18.1 31.6 19.4333 31.6 21.1C31.6 22.9 31 24.3333 29.8 25.4C28.6667 26.4 27.1 26.9 25.1 26.9C22.7667 26.9 20.9333 26 19.6 24.2C18.3333 22.4 17.7 19.8333 17.7 16.5C17.7 13.5 18.3667 10.7333 19.7 8.2C21.0333 5.6 23.0333 3 25.7 0.399998C25.7667 0.333332 25.8667 0.299999 26 0.299999C26.2 0.299999 26.3667 0.399998 26.5 0.599996C26.6333 0.799997 26.6333 0.966664 26.5 1.1C23.2333 4.43333 21.6 8.36666 21.6 12.9C21.6 14.7667 21.9333 16.1333 22.6 17C23.2 16 24.4333 15.5 26.3 15.5Z" fill="#908D8B" />
-                        </svg>
-                       <div className='paragraph'>
-                       <p className='my-8  font-primary text-[#908d8b] '>
-                           {
-                              review
-                           }
-                        </p>
-                       </div>
-                  </div>
+            <div className="mx-4">
+                  <Image
+                        src={src}
+                        width={250}
+                        height={500}
+                        alt="reviews"
+                        className="rounded-md shadow-xl"
+                  />
             </div>
       )
 }

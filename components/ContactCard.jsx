@@ -6,7 +6,6 @@ import Image from 'next/image'
 
 const ContactCard = () => {
   const [fname, setFName] = useState('')
-  const [lname, setLName] = useState('')
   const [email, setEmail] = useState('')
   const [description, setDescription] = useState('')
   const [phone, setPhone] = useState('')
@@ -15,13 +14,12 @@ const ContactCard = () => {
   const emailFunction = async () => {
     const requestBody = {
       fname: `${fname}`,
-      lname: `${lname}`,
       email: `${email}`,
       phone: `${phone}`,
       description: `${description}`,
     };
 
-    const response = await fetch('https://eventsbyarch.ae/api/mail-me', {
+    const response = await fetch('/api/mail-me', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json', // Set the appropriate content type
@@ -30,12 +28,12 @@ const ContactCard = () => {
     });
 
     const data = await response.json();
-   if( data.success === true ) {
-    setData(data)
-    setTimeout(()=>{
-      setStyle('hidden')
-    },3000)
-  }
+    if (data.success === true) {
+      setData(data)
+      setTimeout(() => {
+        setStyle('hidden')
+      }, 3000)
+    }
   };
 
   return (
@@ -48,27 +46,23 @@ const ContactCard = () => {
           <p>Address :  Al Quoz, Dubai, UAE</p>
         </div>
         <SocialIcons />
-        <Image src="/profile.png" alt="image" fill={true} className='sm:w-[400px] overflow-hidden w-[200px] absolute top-[20%]  sm:top-[10%] left-[20%] sm:left-[10%] z-[-1] opacity-50 select-none  ' />
+        <Image src="/profile.png" alt="image" width={500} height={500} className='sm:w-[400px] overflow-hidden w-[200px] absolute top-[20%]  sm:top-[10%] left-[20%] sm:left-[1%] -z-[5] pacity-50 select-none opacity-40  ' />
       </div>
-      <div className='flex justify-center flex-col mx-[5rem] sm:bg-transparent bg-[#bfe2db] px-2 py-4 my-4 rounded-md'>
-        <h1 className='text-[30px] sm:text-left text-center text-[#005B71]'>DROP US A NOTE.</h1>
+      <div className='flex justify-center flex-col mx-[5rem] sm:bg-transparent bg-[#bfe2db] px-2 py-4 my-4 max-w-sm w-full rounded-md'>
+        <h1 className='text-[30px] max-w-sm sm:text-left font-primary text-center text-[#005B71]'>DROP US A NOTE</h1>
         <br />
         <br />
         <div className='sm:block grid place-items-center'>
-          <input type="text" className='outline-none border-b-[3px] text-[#005B71] text-[18px] mx-1 border-[#74C3E3]  bg-transparent ' placeholder='First Name' onChange={(e) => { setFName(e.target.value) }} />
-          <input type="text" className='outline-none border-b-[3px] text-[#005B71] text-[18px] mx-1 border-[#74C3E3] bg-transparent ' placeholder='Last Name' onChange={(e) => { setLName(e.target.value) }} />
-        </div>
-        <div className='sm:block grid place-items-center'>
-          <br />
-          <br />
-          <input type="text" className='outline-none border-b-[3px] text-[#005B71] text-[18px] mx-1 border-[#74C3E3] bg-transparent' placeholder='Phone' onChange={(e) => { setPhone(e.target.value) }} />
-          <input type="email" className='outline-none border-b-[3px]  text-[#005B71] text-[18px] mx-1 border-[#74C3E3] bg-transparent' placeholder='Email' onChange={(e) => { setEmail(e.target.value) }} />
+          <input type="text" className='outline-none border-b-[3px] text-[#005B71] text-[18px] mx-1 border-[#74C3E3]  bg-transparent w-full ' placeholder='Name' onChange={(e) => { setFName(e.target.value) }} />
         </div>
         <br />
+        <input type="text" className='outline-none border-b-[3px] text-[#005B71] text-[18px] mx-1 w-full border-[#74C3E3] bg-transparent' placeholder='Phone / Whatsapp No.' onChange={(e) => { setPhone(e.target.value) }} />
         <br />
-        <textarea name="content" className='outline-none border-b-[3px] text-[#005B71] text-[18px] mx-1 border-[#74C3E3]  bg-transparent' cols="30" rows="1" onChange={(e) => { setDescription(e.target.value) }} placeholder='Send us a couple of line about your event!'></textarea>
+        <input type="email" className='outline-none border-b-[3px]  text-[#005B71] text-[18px] w-full mx-1 border-[#74C3E3] bg-transparent' placeholder='Email' onChange={(e) => { setEmail(e.target.value) }} />
+        <br />
+        <textarea name="content" className='outline-none border-b-[3px] text-[#005B71] text-[18px] mx-1 border-[#74C3E3]  bg-transparent' cols="30" rows="1" onChange={(e) => { setDescription(e.target.value) }} placeholder='Your Message'></textarea>
         <div className='py-5 px-1 lg:px-auto '>
-          <input onClick={emailFunction} className='border-b-[3px] cursor-pointer border-[#74C3E3] text-[#908d8b] ' type='submit' value=' Send ' />
+          <input onClick={emailFunction} className='bg-[#BFE2DB] px-2 py-1 rounded-md text-[#005b71] font-semibold cursor-pointer border-[#74C3E3]  ' type='submit' value=' Send ' />
         </div>
       </div>
       {

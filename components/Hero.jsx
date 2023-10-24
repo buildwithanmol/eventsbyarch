@@ -12,7 +12,7 @@ import {Parisienne} from 'next/font/google'
 const parisienne = Parisienne({subsets:['latin'],
 weight:'400'})
 
-const Hero = ({ primary, secondary }) => {
+const Hero = ({ primary, secondary, type }) => {
   const wordsArray = ['Wedding', 'Party', 'Decor', 'Birthday', 'Events'];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fadeDirection, setFadeDirection] = useState(1)
@@ -46,7 +46,7 @@ const Hero = ({ primary, secondary }) => {
 
   return (
     <>
-      <main className='relative lg:min-h-[100vh] min-h-[60vh] mb-[4vw] '  >
+      <main className='relative lg:min-h-[100vh] min-h-[60vh] mb-[2vw] '  >
         {/* Navigation Menu */}
         <nav className='flex  justify-between py-2 '>
           <div className='w-[5px] h-[5px]'>
@@ -105,7 +105,7 @@ const Hero = ({ primary, secondary }) => {
         }
         <section className='flex flex-col items-center justify-around my-[15vw] '>
           <div className='text-center'>
-            <h1 className='text-white text-[25px] sm:text-[27px] lg:text-[38px] font-primary '>  { primary }</h1>
+            <h1 className={`  text-white ${ type ? 'sm:text-4xl ' :  parisienne.className  } text-[25px] sm:text-8xl font-primary `}>  { primary }</h1>
             {
               secondary === true ? <h1 className={` font-primary text-white text-[25px] sm:text-[27px] lg:text-[38px] italic fade-word ${fadeDirection === 1 ? 'fade-in' : 'fade-out'}`} >
               {wordsArray[currentIndex]}
