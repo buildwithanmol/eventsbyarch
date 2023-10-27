@@ -47,15 +47,16 @@ const Home = () => {
         </h1>
         <br />
         <br />
-        <h1 className="text-[#908d8b] text-center text-5xl  font-primary">
-          {" "}
-          WELCOME <span className="text-[18px]">at</span>{" "}
+        <div className="flex flex-col items-center md:space-x-4 justify-center md:flex-row">
+          <h1 className="text-[#908d8b] text-center text-5xl  font-primary">WELCOME</h1> <br />
+           <span className="text-[18px] text-[#908d8b]">at</span>
+           <br />
           <span
             className={`text-center gradient-text text-5xl lg:text-8xl my-2 ${parisienne.className} `}
           >
             Arch Events
           </span>
-        </h1>
+        </div>
         <Line style="my-8" />
       </section>
       <section className="flex items-center justify-center flex-col ">
@@ -71,14 +72,12 @@ const Home = () => {
             />
             <EventsBox
               type="image"
-              // styleImage='bg-[url("/home/wedding.jpg")]'
               src="/home/wedding.jpeg"
             />
           </div>
           <div className="flex items-center sm:flex-row flex-col  ">
             <EventsBox
               type="image"
-              // styleImage='bg-[url("https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg")] '
               src="/home/events.jpeg"
             />
             <EventsBox
@@ -101,7 +100,6 @@ const Home = () => {
             />
             <EventsBox
               type="image"
-              // styleImage='bg-[url("https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg")]'
               src="/home/corporates.jpg"
             />
           </div>

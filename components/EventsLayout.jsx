@@ -40,7 +40,7 @@ const EventsLayout = ({ primaryTitle, heroTitle, secondaryTitle, contentHeading,
                         })
                     }
                 </div>
-                <Carousel className='md:hidden' autoPlay interval={3000} >
+                <Carousel className='md:hidden' showThumbs={ imgSrc ? false : true }  autoPlay interval={3000} >
                     {
                         imgSrc && imgSrc.map((e, i) => {
                             return <Image src={e} key={i} className='object-cover w-full h-full shadow-xl rounded-md' alt="image" width={400} height={400} />
