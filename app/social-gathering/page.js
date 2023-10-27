@@ -3,7 +3,7 @@ import EventsLayout from 'components/EventsLayout'
 
 const SocialGathering = () => {
   const images = [
-    '/social/1.jpeg',
+    '/social/1.jpg',
     '/social/2.png',
     '/social/3.jpg',
     '/social/5.jpg',
