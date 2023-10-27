@@ -78,7 +78,7 @@ const Home = () => {
           <div className="flex items-center sm:flex-row flex-col  ">
             <EventsBox
               type="image"
-              src="/home/events.jpeg"
+              src="/home/events.jpg"
             />
             <EventsBox
               type="content"
