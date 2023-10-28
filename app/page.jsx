@@ -49,7 +49,7 @@ const Home = () => {
         <br />
         <div className="flex flex-col items-center md:space-x-4 justify-center md:flex-row">
           <h1 className="text-[#908d8b] text-center text-5xl  font-primary">WELCOME</h1> <br />
-           <span className="text-[18px] text-[#908d8b]">at</span>
+           <span className="text-[18px] text-[#908d8b]">to</span>
            <br />
           <span
             className={`text-center gradient-text text-5xl lg:text-8xl my-2 ${parisienne.className} `}

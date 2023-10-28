@@ -53,7 +53,7 @@ const About = () => {
       <section className="flex items-center justify-center sm:flex-row  flex-col-reverse relative ">
         <Carousel
           autoPlay
-          interval={3000}
+          interval={1500}
           infiniteLoop
           className="aspect-square rounded-3xl overflow-hidden max-w-lg  drop-shadow-2xl"
           showArrows={false}
