@@ -5,6 +5,7 @@ import Image from "next/image";
 import Line from "components/Line";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import ContactCard from "components/ContactCard";
 
 const About = () => {
   const images = [
@@ -49,7 +50,7 @@ const About = () => {
           </p>
         </div>
       </section>
-      <hr className="mx-20 my-5" />
+      <Line style="my-8" />
       <section className="flex items-center justify-center sm:flex-row  flex-col-reverse relative ">
         <Carousel
           autoPlay
@@ -80,6 +81,7 @@ const About = () => {
           </h1>
         </div>
       </section>
+      <ContactCard/>
     </>
   );
 };

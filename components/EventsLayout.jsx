@@ -10,12 +10,12 @@ import { Carousel } from 'react-responsive-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const EventsLayout = ({ primaryTitle, heroTitle, secondaryTitle, contentHeading, contentParagraph, imgSrc, contactHeader }) => {
-    const [textFunction, setTextFunction] = useState(addBreak())
+    // const [textFunction, setTextFunction] = useState(addBreak())
     const { width } = useWindowDimensions()
-    function addBreak(textValue) {
-        const text = textValue ? textValue.replace(/\./g, '.<br/>') : contentHeading.replace(/\./g, '.<br/>');
-        return { __html: text }
-    }
+    // function addBreak(textValue) {
+    //     const text = textValue ? textValue.replace(/\./g, '.<br/>') : contentHeading.replace(/\./g, '.<br/>');
+    //     return { __html: text }
+    // }
     return (
         <>
             <Hero primary={heroTitle} />
@@ -27,9 +27,9 @@ const EventsLayout = ({ primaryTitle, heroTitle, secondaryTitle, contentHeading,
             <section className='gradient  flex lg:flex-row flex-col-reverse items-center justify-evenly md:space-x-4 p-8'>
                 <div className='  '>
                     {
-                        width >= 768 ? <div className={`text-[50px] lg:text-left text-center font-primary text-white italic `} dangerouslySetInnerHTML={textFunction} /> : <h1 className='text-[40px] lg:text-left text-center font-primary text-white italic '> {contentHeading} </h1>
+                        <h1  className={`text-[50px] lg:text-left text-center font-primary text-white italic `} > {contentHeading} </h1>
                     }
-                    <p className='max-w-[450px]  text-white  ' > {contentParagraph} </p>
+                    <div className='max-w-[450px]  text-white  ' dangerouslySetInnerHTML={{__html: contentParagraph}} /> 
                 </div>
                 <div className=' grid-cols-2  grid-rows-2 place-items-center justify-center max-w-2xl gap-2 hidden md:grid '>
                     {
@@ -48,7 +48,7 @@ const EventsLayout = ({ primaryTitle, heroTitle, secondaryTitle, contentHeading,
                     }
                 </Carousel>
             </section>
-            <div className={`lg:text-[30px] italic text-[25px] text-center font-primary gradient-text mx-3 mt-[3vw] mb-[1vw] `} dangerouslySetInnerHTML={addBreak(contactHeader)} />
+            <div className={`lg:text-[30px] italic text-[25px] text-center font-primary gradient-text mx-3 mt-[3vw] mb-[1vw] `}  />
             <Line style='mb-5' />
             <ContactCard />
         </>

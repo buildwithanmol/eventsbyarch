@@ -12,7 +12,8 @@ import { Data } from "data/usersData";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import "swiper/css/navigation";
+import { Navigation, Pagination } from "swiper/modules";
 import ContactCard from "components/ContactCard";
 
 const parisienne = Parisienne({
@@ -152,7 +153,8 @@ const Home = () => {
           pagination={{
             clickable: true,
           }}
-          modules={[Pagination]}
+          modules={[Pagination, Navigation]}
+          navigation
           breakpoints={{
             // Set breakpoints for different screen sizes
             768: {
