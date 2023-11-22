@@ -26,7 +26,7 @@ const Hero = ({ primary, secondary, type }) => {
   }
   useEffect(() => {
     setPlayer(<video
-      src='/heroVideo.mp4'
+      src='/heroVideo.webm'
       autoPlay
       loop
       muted
