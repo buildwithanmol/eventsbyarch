@@ -3,7 +3,7 @@ import EventsLayout from 'components/EventsLayout'
 
 const Wedding = () => {
   const images = [
-    '/wedding/1.jpeg',
+    '/wedding/1.jpg',
     '/wedding/2.jpg',
     '/wedding/3.jpg',
     '/wedding/4.jpg',
