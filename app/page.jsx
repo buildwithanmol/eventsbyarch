@@ -149,7 +149,6 @@ const Home = () => {
         </h1>
         <Swiper
           slidesPerView={1} // Display 1 slide per view by default
-          spaceBetween={-120}
           pagination={{
             clickable: true,
           }}

@@ -15,13 +15,14 @@ const About = () => {
     "/team/4.jpg",
     "/team/5.jpg",
     "/team/6.jpg",
-    "/team/7.jpg",
+    "/team/8.jpg", 
+    "/team/9.jpg",
   ];
   return (
     <>
       <Hero primary="Meet The Team" />
       <Line style=" my-8 " />
-      <section className="flex p-4 sm:flex-row flex-col items-center justify-evenly gradient py-6 relative relative">
+      <section className="flex p-4 sm:flex-row flex-col items-center justify-evenly gradient py-6 relative ">
         <Image
           src="/team/rachna image 4.png"
           alt="image"

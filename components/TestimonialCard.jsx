@@ -5,10 +5,10 @@ const TestimonialCard = ({ styleIt, src }) => {
             <div className="mx-4">
                   <Image
                         src={src}
-                        width={250}
-                        height={500}
+                        width={400}
+                        height={400}
                         alt="reviews"
-                        className="rounded-md shadow-xl"
+                        className="rounded-md shadow-xl "
                   />
             </div>
       )

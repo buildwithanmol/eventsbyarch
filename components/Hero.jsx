@@ -7,10 +7,12 @@ import Link from 'next/link'
 import SocialIcons from './SocialIcons'
 import Line from './Line'
 import '../styles/globals.css'
-import {Parisienne} from 'next/font/google'
+import { Parisienne } from 'next/font/google'
 
-const parisienne = Parisienne({subsets:['latin'],
-weight:'400'})
+const parisienne = Parisienne({
+  subsets: ['latin'],
+  weight: '400'
+})
 
 const Hero = ({ primary, secondary, type }) => {
   const wordsArray = ['Wedding', 'Party', 'Decor', 'Birthday', 'Events'];
@@ -83,8 +85,8 @@ const Hero = ({ primary, secondary, type }) => {
               <div className='flex items-center justify-center sm:flex-row flex-col my-4'>
                 <Link href="/" className='sm:mx-8 text-[25px] my-4 gradient-text' >Home</Link>
                 <div className='flex flex-col items-center justify-center relative'>
-                  <h1 onClick={dropDown} className='sm:mx-8 cursor-pointer text-[25px] my-4 gradient-text' >Services</h1>
-                  <div className={`flex-col text-center absolute top-[8vh] w-[150px] p-2 rounded-lg hover: gradient text-white font-medium ${drop}`}>
+                  <h1 onClick={dropDown} className='sm:mx-8 cursor-pointer  text-[25px] my-4 gradient-text' >Services</h1>
+                  <div className={`flex-col text-center absolute top-[8vh] w-[150px] p-2 rounded-lg hover: gradient text-white font-medium z-50 ${drop}`}>
                     <Link href="/wedding" className='my-1 hover:bg-white rounded-md hover:text-[#2C94AD] transition-all'>Wedding</Link>
                     <Link href="/social-gathering" className='my-1 hover:bg-white rounded-md hover:text-[#2C94AD] transition-all'>Social Gathering</Link>
                     <Link href="/corporates" className='my-1 hover:bg-white rounded-md hover:text-[#2C94AD]  transition-all'> Corporates </Link>
@@ -95,7 +97,7 @@ const Hero = ({ primary, secondary, type }) => {
               </div>
               <SocialIcons margin='my-5' />
             </header>
-            <Line  />
+            <Line />
           </section>
         </section>
 
@@ -105,10 +107,10 @@ const Hero = ({ primary, secondary, type }) => {
         }
         <section className='flex flex-col items-center justify-around my-[15vw] '>
           <div className='text-center'>
-            <h1 className={`  text-white ${ type ? 'sm:text-[45px] text-[28px]' :  parisienne.className  } text-5xl sm:text-8xl font-primary `}>  { primary }</h1>
+            <h1 className={`  text-white ${type ? 'sm:text-[45px] text-[28px]' : parisienne.className} text-5xl sm:text-8xl font-primary `}>  {primary}</h1>
             {
               secondary === true ? <h1 className={` font-primary text-white text-[25px] sm:text-[27px] lg:text-[38px] italic fade-word ${fadeDirection === 1 ? 'fade-in' : 'fade-out'}`} >
-              {wordsArray[currentIndex]}
+                {wordsArray[currentIndex]}
               </h1> : null
             }
           </div>
