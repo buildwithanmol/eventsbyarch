@@ -4,7 +4,6 @@ export const Data = [
       "/reviews/3.png",
       "/reviews/4.png",
       "/reviews/5.png",
-      "/reviews/7.png",
       "/reviews/8.png",
       "/reviews/9.png",
       "/reviews/10.png",
