@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import Footer from '../components/Footer'
 
 export const metadata = {
-  title: 'Arch Events',
+  title: 'Arch Events Management LLC',
   description: 'Arch Events has a flair for providing customizable design, planning & production services that are Uniquely You, Uniquely Dubai.',
 }
 

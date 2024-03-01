@@ -42,7 +42,7 @@ const ContactCard = () => {
         <div className=' font-primary text-[#005B71] font-bold text-[25px] '><h1>GET IN TOUCH</h1></div>
         <div className='my-5 text-[#005B71] text-[18px] font-regular '>
           <p>Phone :  +971 56 493 9726 | +971 55 893 9726</p>
-          <p>Email :  rachna@eventsbyarch.ae</p>
+          <p>Email :  info@eventsbyarch.ae</p>
           <p>Address :  Al Quoz, Dubai, UAE</p>
         </div>
         <SocialIcons />

@@ -18,7 +18,7 @@ const Footer = () => {
              <SocialIcons/>
           </div>
           <hr className='mx-10' />
-          <p className='text-[#908d8b] my-2 text-center '>All Rights Reserved. Arch Events 2023</p>
+          <p className='text-[#908d8b] my-2 text-center '>All Rights Reserved. Arch Events Management LLC 2024</p>
       </footer>
     </>
   )
