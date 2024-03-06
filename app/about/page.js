@@ -13,7 +13,6 @@ const About = () => {
     "/team/2.jpg",
     "/team/3.jpg",
     "/team/4.jpg",
-    "/team/5.jpg",
     "/team/6.jpg",
     "/team/8.jpg", 
     "/team/9.jpg",
