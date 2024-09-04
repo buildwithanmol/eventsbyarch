@@ -12,11 +12,12 @@ const About = () => {
     "/team/1.jpg",
     "/team/2.jpg",
     "/team/3.jpg",
-    "/team/4.jpg",
     "/team/6.jpg",
-    "/team/8.jpg", 
     "/team/9.jpg",
-    "/team/10.jpg",
+    "/team/11.jpeg",
+    "/team/12.jpg",
+    "/team/13.jpg",
+    "/team/14.jpg",
   ];
   return (
     <>

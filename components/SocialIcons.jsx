@@ -11,9 +11,9 @@ const SocialIcons = ({ margin }) => {
       <Link href={`https://www.instagram.com/eventsbyarch/`} className='cursor-pointer'>
         <AiOutlineInstagram color='#2C94AD' size={30} className=' cursor-pointer text-[#2C94AD] ' />
       </Link>
-      <Link href="https://facebook.com/eventsbyarch"><AiOutlineFacebook color='#2C94AD' size={30} classNameName=' cursor-pointer ' /></Link>
-      <Link href="https://www.youtube.com/@eventsbyarch"><AiOutlineYoutube color='#2C94AD' size={30} classNameName=' cursor-pointer ' /></Link>
-      <Link href="#"><FaTiktok color='#2C94AD' size={30} classNameName=' cursor-pointer ' /></Link>
+      <Link href="https://facebook.com/eventsbyarch"><AiOutlineFacebook color='#2C94AD' size={30} className=' cursor-pointer ' /></Link>
+      <Link href="https://www.youtube.com/@eventsbyarch"><AiOutlineYoutube color='#2C94AD' size={30} className=' cursor-pointer ' /></Link>
+      <Link href="#"><FaTiktok color='#2C94AD' size={30} className=' cursor-pointer ' /></Link>
     </div>
   )
 }

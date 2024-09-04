@@ -41,7 +41,7 @@ const ContactCard = () => {
       <div className='bg-[#BFE2DB]  h-[320px] w-[320px] sm:h-[450px] mx-[5rem] sm:w-[450px] rounded-full text-center gradient-border  z-[100] border-4 border-[#2C94AD] flex items-center flex-col justify-center relative'>
         <div className=' font-primary text-[#005B71] font-bold text-[25px] '><h1>GET IN TOUCH</h1></div>
         <div className='my-5 text-[#005B71] text-[18px] font-regular '>
-          <p>Phone :  +971 56 493 9726 | +971 55 893 9726</p>
+          <p>Phone :  +971 05 649 39726 | +971 55 893 9726</p>
           <p>Email :  info@eventsbyarch.ae</p>
           <p>Address :  Al Quoz, Dubai, UAE</p>
         </div>
